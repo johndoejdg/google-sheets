@@ -19,6 +19,6 @@ CLIENT_ID,<br>
 CLIENT_SECRET,<br> 
 REDIRECT_URI
 
-in frontend/controllers/GoogleController.php on your own values.
+in <code>frontend/controllers/GoogleController.php</code> on your own values.
 
 Now you can view spreadsheets, if you have them, by http://yoursite.ru

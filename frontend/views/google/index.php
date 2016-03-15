@@ -19,11 +19,6 @@ $this->params['breadcrumbs'] = [
 	\Yii::t('app', 'Google Sheets'),
 ];
 
-$this->params['jumbotron'] = [
-	'title' => \Yii::t('app', 'Google Sheets'), 
-	'subtitle' => \Yii::t('app', 'index'),
-	'image' => Url::toRoute('files/site/page/google-bg.jpg'),
-];
 ?>
 
 <h1><?= $title ?></h1>

@@ -17,7 +17,6 @@ $this->params['breadcrumbs'] = [
 	\Yii::t('app', 'view'),
 ];
 
-$this->params['jumbotron'] = false;
 ?>
 
 <iframe src='https://docs.google.com/spreadsheets/d/<?= $id ?>/edit' width='100%' height='600px'></iframe>
