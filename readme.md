@@ -21,4 +21,4 @@ REDIRECT_URI
 
 in <code>frontend/controllers/GoogleController.php</code> on your own values.
 
-Now you can view spreadsheets, if you have them, by http://yoursite.ru
+Now you can view spreadsheets, if you have them, by http://yoursite.ru/goole
