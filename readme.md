@@ -1,6 +1,6 @@
 <h1>Access to Google Sheets from Yii2</h1>
 
-Example.
+Example are using Google REST API. OAuth2 authorization and getting spreadsheet.
 
 <h2>Register Google-project first</h2>
 
