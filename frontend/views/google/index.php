@@ -16,7 +16,7 @@ use yii\grid\GridView;
 $this->title = Yii::$app->name . " - Google Sheets"; 
 
 $this->params['breadcrumbs'] = [
-	\Yii::t('app', 'Google Sheets'),
+  \Yii::t('app', 'Google Sheets'),
 ];
 
 ?>
@@ -25,33 +25,33 @@ $this->params['breadcrumbs'] = [
 <p><?= $owner ?></p>
 
 <?= GridView::widget([
-	'dataProvider' => $dataProvider,
-	'layout' => "{items}\n{summary}\n{pager}",
-	'columns' => [
-		'title',
-		'author',
-		'email',
-		[
-			'header' => \Yii::t('app', 'Updated'),
-			'value' => function($data) {
-				return date('Y-m-d', $data['updated_at']);
-			}
-		],
+  'dataProvider' => $dataProvider,
+  'layout' => "{items}\n{summary}\n{pager}",
+  'columns' => [
+    'title',
+    'author',
+    'email',
+    [
+      'header' => \Yii::t('app', 'Updated'),
+      'value' => function($data) {
+        return date('Y-m-d', $data['updated_at']);
+      }
+    ],
 
-		[
-			'class' => 'yii\grid\ActionColumn',
-			'template' => '{update}',
-			'options' => ['style' => 'width:5%;'],
-			'buttons' => [
-				'update' => function ($url, $data, $key) {
-					return Html::a(
-						$data['editable']
-							? '<span class="glyphicon glyphicon-pencil"></span>'
-							: '<span class="glyphicon glyphicon-eye-open"></span>',
-						['view', 'id' => $data['id']]
-					);
-				},
-			],
-		],
-	],
+    [
+      'class' => 'yii\grid\ActionColumn',
+      'template' => '{update}',
+      'options' => ['style' => 'width:5%;'],
+      'buttons' => [
+        'update' => function ($url, $data, $key) {
+          return Html::a(
+            $data['editable']
+              ? '<span class="glyphicon glyphicon-pencil"></span>'
+              : '<span class="glyphicon glyphicon-eye-open"></span>',
+            ['view', 'id' => $data['id']]
+          );
+        },
+      ],
+    ],
+  ],
 ]); ?>
